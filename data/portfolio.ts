@@ -21,7 +21,7 @@ export const portfolio = {
   location: 'Jabalpur, India.',
   description:
     'I\'m a 4th-year B.Des student at IIITDM Jabalpur, building concept-driven brands across Fashion, AI & Consumer Products where cultural narrative meets visual systems.',
-  heroImagePath: 'images/WhatsApp Image 2026-05-29 at 06.47.49.jpeg',
+  heroImagePath: '/profile.jpg',
   contact: {
     behanceLabel: 'Behance',
     behanceUrl: 'https://www.behance.net/bhaveshchawre',
@@ -58,7 +58,7 @@ export const portfolio = {
     {
       name: 'Milkyway',
       category: 'Branding & Packaging',
-      imagePath: 'images/Group 13.png',
+      imagePath: '/projects/milkyway.jpg',
       description:
         'A clean packaging direction that leans into clarity, contrast, and material-forward presentation for a premium milk concept.',
       details: ['Brand identity exploration', 'Packaging system', 'Art direction'],
@@ -68,7 +68,7 @@ export const portfolio = {
     {
       name: 'ZARDOZI',
       category: 'Creative direction',
-      imagePath: 'images/Slide 16_9 - 87.png',
+      imagePath: '/projects/zardozi.jpg',
       description:
         'A typographic gold-on-black identity study focused on sharp hierarchy, quiet luxury, and emblematic brand recall.',
       details: ['Creative direction', 'Logo refinement', 'Visual language'],
@@ -78,7 +78,7 @@ export const portfolio = {
     {
       name: 'Be boring',
       category: 'Visual Identity',
-      imagePath: 'images/image 3045.png',
+      imagePath: '/projects/beboring.jpg',
       description:
         'A sunlit visual identity built around a candid campaign image, bold caps, and a deliberately understated brand presence.',
       details: ['Visual identity', 'Campaign framing', 'Brand styling'],

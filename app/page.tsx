@@ -1,8 +1,6 @@
 import { PortfolioShell } from '@/components/portfolio-shell';
-import { getPortfolioView } from '@/lib/portfolio-view';
+import { portfolio } from '@/data/portfolio';
 
-export default async function Page() {
-  const data = await getPortfolioView();
-
-  return <PortfolioShell data={data} />;
+export default function Page() {
+  return <PortfolioShell data={portfolio} />;
 }

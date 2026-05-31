@@ -1,5 +1,6 @@
 "use client";
 
+import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import {
@@ -18,10 +19,9 @@ import {
   Star,
 } from 'lucide-react';
 import type { PortfolioData, PortfolioTabId } from '@/data/portfolio';
-import type { PortfolioView } from '@/lib/portfolio-view';
 
 type PortfolioShellProps = {
-  data: PortfolioView;
+  data: PortfolioData;
 };
 
 const tabConfig: Array<{ id: PortfolioTabId; label: string; icon: React.ComponentType<{ className?: string }> }> = [
@@ -88,7 +88,14 @@ export function PortfolioShell({ data }: PortfolioShellProps) {
             className="flex justify-center lg:pt-4"
           >
             <div className="relative h-[290px] w-[210px] overflow-hidden bg-white sm:h-[320px] sm:w-[224px] lg:h-[396px] lg:w-[238px]">
-              <img src={data.heroImageSrc} alt={`${data.name} portrait`} className="h-full w-full object-cover" />
+              <Image
+                src={data.heroImagePath}
+                alt={`${data.name} portrait`}
+                fill
+                sizes="(max-width: 640px) 210px, (max-width: 1024px) 224px, 238px"
+                className="object-cover"
+                priority
+              />
             </div>
           </motion.div>
 
@@ -252,10 +259,12 @@ export function PortfolioShell({ data }: PortfolioShellProps) {
                 className="group cursor-pointer overflow-hidden rounded-2xl border border-line bg-white text-left shadow-soft"
               >
                 <div className="relative h-[180px] w-full overflow-hidden bg-[#f6f4ef] sm:h-[190px]">
-                  <img
-                    src={project.imageSrc}
+                  <Image
+                    src={project.imagePath}
                     alt={project.name}
-                    className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.02]"
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
+                    className="object-cover transition duration-500 group-hover:scale-[1.02]"
                   />
                 </div>
 
@@ -295,8 +304,14 @@ export function PortfolioShell({ data }: PortfolioShellProps) {
               onMouseDown={(event) => event.stopPropagation()}
             >
               <div className="grid gap-6 lg:grid-cols-[1.15fr_0.85fr]">
-                <div className="overflow-hidden rounded-[22px] border border-line bg-white">
-                  <img src={selectedProject.imageSrc} alt={selectedProject.name} className="h-full w-full object-cover" />
+                <div className="relative min-h-[340px] overflow-hidden rounded-[22px] border border-line bg-white">
+                  <Image
+                    src={selectedProject.imagePath}
+                    alt={selectedProject.name}
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 60vw"
+                    className="object-cover"
+                  />
                 </div>
 
                 <div className="flex flex-col justify-between gap-6">

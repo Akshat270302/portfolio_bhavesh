@@ -21,7 +21,7 @@ Notes
 
 - Resume is served at `/api/resume` (streams the local `Resume (13).pdf`).
 - Editable content and links live in `data/portfolio.ts`.
-- Project images are loaded from the `images/` folder at runtime.
+- Portfolio images are served from `public/` and referenced with paths like `/profile.jpg` and `/projects/milkyway.jpg`.
 
 License
 
