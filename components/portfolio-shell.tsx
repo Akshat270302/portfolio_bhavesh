@@ -386,43 +386,11 @@ function ToolCard({ name, kind }: { name: string; kind: PortfolioData['tools'][n
 }
 
 function ToolMark({ kind }: { kind: PortfolioData['tools'][number]['kind'] }) {
-  switch (kind) {
-    case 'figma':
-      return (
-        <div className="flex h-16 w-16 flex-wrap overflow-hidden rounded-[18px]">
-          <span className="h-1/2 w-1/2 rounded-tl-full bg-[#f24e1e]" />
-          <span className="h-1/2 w-1/2 bg-[#a259ff]" />
-          <span className="h-1/2 w-1/2 bg-[#1abcfe]" />
-          <span className="h-1/2 w-1/2 rounded-br-full bg-[#0acf83]" />
-        </div>
-      );
-    case 'flow':
-      return (
-        <div className="flex h-16 w-16 items-center justify-center bg-black text-[20px] font-semibold tracking-[-0.08em] text-white">
-          Flow
-        </div>
-      );
-    case 'claude':
-      return <Star className="h-14 w-14 text-[#cf8d60]" strokeWidth={1.8} />;
-    case 'photoshop':
-      return (
-        <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-[#0f1730] text-[28px] font-semibold tracking-[-0.08em] text-[#5fa6ff]">
-          Ps
-        </div>
-      );
-    case 'canva':
-      return (
-        <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[linear-gradient(135deg,#53c3d8_0%,#6e4df6_100%)] text-[18px] font-semibold italic text-white">
-          Canva
-        </div>
-      );
-    case 'notion':
-      return (
-        <div className="flex h-16 w-16 items-center justify-center rounded-lg border-2 border-black bg-white text-[28px] font-semibold tracking-[-0.08em] text-black">
-          N
-        </div>
-      );
-    default:
-      return null;
-  }
+  const publicPath = `/tools/${kind}.png`;
+
+  return (
+    <div className="relative h-16 w-16">
+      <Image src={publicPath} alt={kind} fill className="object-contain" />
+    </div>
+  );
 }

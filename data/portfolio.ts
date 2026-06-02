@@ -60,8 +60,8 @@ export const portfolio = {
       category: 'Branding & Packaging',
       imagePath: '/projects/milkyway.jpg',
       description:
-        'A clean packaging direction that leans into clarity, contrast, and material-forward presentation for a premium milk concept.',
-      details: ['Brand identity exploration', 'Packaging system', 'Art direction'],
+        'Is a premium milk brand that reimagines milk as a lifestyle product through bold retro branding, canned packaging, and distinctive storytelling.',
+      details: ['branding', 'packaging', 'Creative Direction'],
       externalLinkLabel: 'Behance gallery',
       externalLinkUrl: 'https://www.behance.net/gallery/248961351/Milkyway-Branding-Packaging',
     },
@@ -70,8 +70,8 @@ export const portfolio = {
       category: 'Creative direction',
       imagePath: '/projects/zardozi.jpg',
       description:
-        'A typographic gold-on-black identity study focused on sharp hierarchy, quiet luxury, and emblematic brand recall.',
-      details: ['Creative direction', 'Logo refinement', 'Visual language'],
+        'Reimagines traditional Indian embroidery as a contemporary luxury lifestyle brand, preserving heritage craftsmanship through modern branding, storytelling, and product design.',
+      details: ['BRANDING', 'LOGO DESIGN', 'CREATIVE DIRECTION'],
       externalLinkLabel: 'Behance gallery',
       externalLinkUrl: 'https://www.behance.net/gallery/249543783/ZARDOZI',
     },
@@ -80,8 +80,8 @@ export const portfolio = {
       category: 'Visual Identity',
       imagePath: '/projects/beboring.jpg',
       description:
-        'A sunlit visual identity built around a candid campaign image, bold caps, and a deliberately understated brand presence.',
-      details: ['Visual identity', 'Campaign framing', 'Brand styling'],
+        'is a fashion brand identity inspired by retro American culture, combining minimalist design, raw imagery, and nostalgic storytelling to create a bold yet understated brand experience.',
+      details: ['Visual identity', 'logo design', 'creative Direction'],
       externalLinkLabel: 'Behance gallery',
       externalLinkUrl: 'https://www.behance.net/gallery/250238535/Be-boring-Visual-Identity',
     },
