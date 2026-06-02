@@ -8,7 +8,7 @@ const config: Config = {
         soft: '0 1px 2px rgba(15, 23, 42, 0.06), 0 10px 30px rgba(15, 23, 42, 0.04)',
       },
       colors: {
-        paper: '#fbfbf8',
+        paper: '#ffffff',
         ink: '#232323',
         muted: '#6c6c6c',
         line: '#e7e5df',

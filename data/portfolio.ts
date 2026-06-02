@@ -61,7 +61,7 @@ export const portfolio = {
       imagePath: '/projects/milkyway.jpg',
       description:
         'Is a premium milk brand that reimagines milk as a lifestyle product through bold retro branding, canned packaging, and distinctive storytelling.',
-      details: ['branding', 'packaging', 'Creative Direction'],
+      details: ['Branding', 'Packaging', 'Creative Direction'],
       externalLinkLabel: 'Behance gallery',
       externalLinkUrl: 'https://www.behance.net/gallery/248961351/Milkyway-Branding-Packaging',
     },
@@ -71,7 +71,7 @@ export const portfolio = {
       imagePath: '/projects/zardozi.jpg',
       description:
         'Reimagines traditional Indian embroidery as a contemporary luxury lifestyle brand, preserving heritage craftsmanship through modern branding, storytelling, and product design.',
-      details: ['BRANDING', 'LOGO DESIGN', 'CREATIVE DIRECTION'],
+      details: ['Branding', 'Logo Design', 'Creative Direction'],
       externalLinkLabel: 'Behance gallery',
       externalLinkUrl: 'https://www.behance.net/gallery/249543783/ZARDOZI',
     },
@@ -81,7 +81,7 @@ export const portfolio = {
       imagePath: '/projects/beboring.jpg',
       description:
         'is a fashion brand identity inspired by retro American culture, combining minimalist design, raw imagery, and nostalgic storytelling to create a bold yet understated brand experience.',
-      details: ['Visual identity', 'logo design', 'creative Direction'],
+      details: ['Visual identity', 'Logo design', 'Creative Direction'],
       externalLinkLabel: 'Behance gallery',
       externalLinkUrl: 'https://www.behance.net/gallery/250238535/Be-boring-Visual-Identity',
     },

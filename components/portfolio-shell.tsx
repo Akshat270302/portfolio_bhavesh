@@ -76,7 +76,7 @@ export function PortfolioShell({ data }: PortfolioShellProps) {
               <br />
               from {data.location}
             </p>
-            <p className="mt-8 max-w-[560px] text-[14px] font-semibold leading-[1.38] tracking-[-0.02em] text-ink sm:text-[17px] lg:text-[18px]">
+            <p className="mt-8 max-w-[560px] text-[14px] font-normal leading-[1.38] tracking-[-0.02em] text-ink sm:text-[17px] lg:text-[18px]">
               {data.description}
             </p>
           </motion.div>
@@ -377,7 +377,7 @@ function ToolCard({ name, kind }: { name: string; kind: PortfolioData['tools'][n
       transition={{ type: 'spring', stiffness: 420, damping: 30 }}
       className="overflow-hidden rounded-2xl border border-line bg-white shadow-soft"
     >
-      <div className="flex h-[160px] items-center justify-center border-b border-line bg-white px-4">
+      <div className="flex h-[220px] items-center justify-center border-b border-line bg-white px-4">
         <ToolMark kind={kind} />
       </div>
       <div className="px-4 py-3 text-[13px] text-ink sm:text-[14px]">{name}</div>
@@ -388,8 +388,22 @@ function ToolCard({ name, kind }: { name: string; kind: PortfolioData['tools'][n
 function ToolMark({ kind }: { kind: PortfolioData['tools'][number]['kind'] }) {
   const publicPath = `/tools/${kind}.jpeg`;
 
+  // Base container size (px)
+  const baseSize = 160; // matches h-40/w-40 used before
+
+  // Per-kind multipliers: +30% for figma/photoshop, -25% for flow/notion
+  const multipliers: Record<string, number> = {
+    figma: 1.3,
+    photoshop: 1.3,
+    flow: 0.75,
+    notion: 0.75,
+  };
+
+  const key = String(kind).toLowerCase();
+  const sizePx = Math.round(baseSize * (multipliers[key] ?? 1));
+
   return (
-    <div className="relative h-24 w-24 flex items-center justify-center">
+    <div className="relative flex items-center justify-center" style={{ width: `${sizePx}px`, height: `${sizePx}px` }}>
       <Image src={publicPath} alt={kind} fill className="object-contain" />
     </div>
   );
