@@ -56,7 +56,7 @@ export function PortfolioShell({ data }: PortfolioShellProps) {
     >
       <div className="mx-auto flex w-full max-w-[1500px] flex-col px-6 pb-10 pt-16 sm:px-10 lg:px-16 xl:px-20">
         <header className="mb-20 lg:mb-24">
-          <h1 className="text-[30px] font-semibold tracking-[-0.05em] text-ink sm:text-[36px] lg:text-[40px] xl:text-[52px]">
+          <h1 className="text-[34px] font-semibold tracking-[-0.05em] text-ink sm:text-[44px] lg:text-[48px] xl:text-[56px]">
             Portfolio 2026
           </h1>
         </header>
@@ -68,10 +68,10 @@ export function PortfolioShell({ data }: PortfolioShellProps) {
             transition={{ delay: 0.08, duration: 0.5 }}
             className="max-w-[560px]"
           >
-            <p className="text-[28px] font-semibold leading-none tracking-[-0.05em] sm:text-[36px] lg:text-[41px]">
+            <p className="text-[34px] font-semibold leading-none tracking-[-0.04em] sm:text-[40px] lg:text-[44px]">
               Hi, I&apos;m <span className="text-green">{data.name}</span>!
             </p>
-            <p className="mt-10 text-[22px] font-semibold leading-[1.18] tracking-[-0.04em] text-ink sm:text-[28px] lg:text-[31px]">
+            <p className="mt-6 text-[20px] font-semibold leading-[1.12] tracking-[-0.03em] text-ink sm:text-[22px] lg:text-[24px]">
               I&apos;m a <span className="text-gold">{data.title}</span>
               <br />
               from {data.location}
@@ -377,7 +377,7 @@ function ToolCard({ name, kind }: { name: string; kind: PortfolioData['tools'][n
       transition={{ type: 'spring', stiffness: 420, damping: 30 }}
       className="overflow-hidden rounded-2xl border border-line bg-white shadow-soft"
     >
-      <div className="flex h-[124px] items-center justify-center border-b border-line bg-white px-4">
+      <div className="flex h-[160px] items-center justify-center border-b border-line bg-white px-4">
         <ToolMark kind={kind} />
       </div>
       <div className="px-4 py-3 text-[13px] text-ink sm:text-[14px]">{name}</div>
@@ -389,7 +389,7 @@ function ToolMark({ kind }: { kind: PortfolioData['tools'][number]['kind'] }) {
   const publicPath = `/tools/${kind}.jpeg`;
 
   return (
-    <div className="relative h-16 w-16">
+    <div className="relative h-24 w-24 flex items-center justify-center">
       <Image src={publicPath} alt={kind} fill className="object-contain" />
     </div>
   );
