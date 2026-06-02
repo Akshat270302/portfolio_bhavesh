@@ -386,7 +386,7 @@ function ToolCard({ name, kind }: { name: string; kind: PortfolioData['tools'][n
 }
 
 function ToolMark({ kind }: { kind: PortfolioData['tools'][number]['kind'] }) {
-  const publicPath = `/tools/${kind}.png`;
+  const publicPath = `/tools/${kind}.jpeg`;
 
   return (
     <div className="relative h-16 w-16">
