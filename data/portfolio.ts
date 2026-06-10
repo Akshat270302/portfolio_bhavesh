@@ -20,7 +20,7 @@ export const portfolio = {
   title: 'Brand Strategist & Creative Designer',
   location: 'Jabalpur, India.',
   description:
-    'I\'m a 4th-year B.Des student at IIITDM Jabalpur, building concept-driven brands across Fashion, AI & Consumer Products where cultural narrative meets visual systems.',
+    'Bachelor of Design from IIITDM Jabalpur, building concept-driven brands across Fashion, AI & Consumer Products where cultural narrative meets visual systems.',
   heroImagePath: '/profile.jpg',
   contact: {
     behanceLabel: 'Behance',

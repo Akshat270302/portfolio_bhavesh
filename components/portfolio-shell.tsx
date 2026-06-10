@@ -56,7 +56,7 @@ export function PortfolioShell({ data }: PortfolioShellProps) {
     >
       <div className="mx-auto flex w-full max-w-[1500px] flex-col px-6 pb-10 pt-16 sm:px-10 lg:px-16 xl:px-20">
         <header className="mb-20 lg:mb-24">
-          <h1 className="text-[34px] font-semibold tracking-[-0.05em] text-ink sm:text-[44px] lg:text-[48px] xl:text-[56px]">
+          <h1 className="text-[34px] font-semibold leading-none tracking-[-0.05em] text-ink sm:text-[40px] lg:text-[44px]">
             Portfolio 2026
           </h1>
         </header>
